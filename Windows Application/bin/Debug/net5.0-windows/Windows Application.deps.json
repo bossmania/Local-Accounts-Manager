@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Windows Application/1.0.0": {
+        "dependencies": {
+          "Password Randomizer": "1.0.0.0"
+        },
+        "runtime": {
+          "Windows Application.dll": {}
+        }
+      },
+      "Password Manger/1.0.0": {
+        "runtime": {
+          "Password Manger.dll": {}
+        }
+      },
+      "Password Randomizer/1.0.0.0": {
+        "runtime": {
+          "Password Randomizer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Windows Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Password Manger/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Password Randomizer/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
