@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.sendAccounts"
+             Title="Send Accounts">
+    <ContentPage.Content>
+        <StackLayout Margin="10,30,10,0">
+
+            <!--ask the user for the ip of the device that the user is sending the accounts to, and tell the user what's going on.-->
+            <Label>What is the IP that you are sending the accounts to?</Label>
+            <RelativeLayout HorizontalOptions="StartAndExpand">
+                <Label Margin="0,17,0,0" FontSize="Medium">IP:</Label>
+                <Entry x:Name="IPBox" Margin="28,2,0,0" HorizontalOptions="FillAndExpand" WidthRequest="170" HorizontalTextAlignment="Center" 
+                       Text="127.0.0.1"/>
+            </RelativeLayout>
+            <Label x:Name="status" HorizontalOptions="Fill" Margin="0,-120,0,0">Status: Waiting for the IP.</Label>
+
+            <!--buttons to send or cancel-->
+            <RelativeLayout HorizontalOptions="End" Margin="5,4">
+                <Button x:Name="Submit" Clicked="Submit_Clicked" Text="Submit"/>
+                <Button x:Name="Cancel" Clicked="Cancel_Clicked" Text="Cancel" Margin="90,0,0,0"/>
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

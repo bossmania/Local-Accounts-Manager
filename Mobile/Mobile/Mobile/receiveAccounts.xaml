@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.receiveAccounts"
+             Title="Receive Accounts">
+    <ContentPage.Content>
+        <StackLayout Margin="10,30,10,0">
+            <Label Margin="0, 2, 0, 0" FontSize="Body" HorizontalOptions="Center">
+                This device is currently waiting for the accounts to be sent here.</Label>
+            <Label Margin="0,2,0,0" FontSize="Body" HorizontalOptions="Center">
+                To send to, go to the other device, click on send accounts, and put the following IP in.</Label>
+            <Label x:Name="IPLabel" FontSize="Body" HorizontalOptions="Center" Margin="0,3,0,0">The IP is 127.0.0.1</Label>
+            <Label x:Name="status" HorizontalOptions="Center"  Margin="0,5,0,0" FontSize="Body">
+                Status: Waiting for a connection</Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

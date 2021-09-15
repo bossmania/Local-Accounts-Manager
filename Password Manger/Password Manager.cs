@@ -2,6 +2,8 @@
 using System.IO;
 using System.Collections.Generic;
 using Encryption;
+using System.Globalization;
+using System.Text;
 
 namespace Password_Manger
 {
@@ -41,12 +43,11 @@ namespace Password_Manger
         Random rand = new Random();
 
         //make the encrypt class
-        encryption encrypt = new encryption();
-
+        public encryption encrypt = new encryption();
         //store the path of the file that will save the accounts
-        string directory = String.Format("C:/Users/{0}/AppData/Local/PasswordSaver/", Environment.UserName);
-        string FileName = "Accounts.txt";
-
+        public string directory = $"{Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData).ToString()}/PasswordSaver";
+        public string fileName = "Accounts.txt";
+         
         //make the list of character to randomly pick a character
         string[] characters = {"a", "b", "c", "d", "e", "f", "g", "h", "i",
                                     "j","k", "l", "m", "n", "o", "p", "q", "r",
@@ -136,6 +137,7 @@ namespace Password_Manger
             string password = Randomizer();
             accountClass tempAccount = new accountClass(account, username, password);
             ListOfAccounts.Add(tempAccount);
+            SaveAccounts();
             return true;
         }
 
@@ -170,7 +172,6 @@ namespace Password_Manger
                     Account.account = newAccount;
                     success = true;
                 }
-
             }
 
             SaveAccounts();
@@ -256,11 +257,15 @@ namespace Password_Manger
             string Password = "";
             foreach (accountClass Account in ListOfAccounts)
             {
-                Password += $"{Account.account} | {Account.username} | {Account.password}\n";
+                Password += $"{Account.account}|{Account.username}|{Account.password}\n";
 
             }
             //encrypt the string and save it to a file
-            encrypt.Encrypt($"{directory}/{FileName}", Password);
+            Tuple<byte[], byte[], byte[]> encryptInfo = encrypt.encrypt(Password);
+            string encryptedMessage = Convert.ToBase64String(encryptInfo.Item1);
+            string encryptedKey = Convert.ToBase64String(encryptInfo.Item2);
+            string encryptedIV = Convert.ToBase64String(encryptInfo.Item3);
+            File.WriteAllText($"{Path.Combine(directory, fileName)}", $"{encryptedMessage}†{encryptedKey}†{encryptedIV}");
         }
 
         //load the accounts
@@ -270,19 +275,23 @@ namespace Password_Manger
             List<accountClass> NewListOfAccount = new List<accountClass>();
 
             //check if the file exists. if it does not, then set the list to an empty one
-            if (File.Exists(string.Format("{0}/{1}", directory, FileName)))
+            if (File.Exists(Path.Combine(directory, fileName)))
             {
-                //load in the file and decrypt it
-                string AllAccounts = encrypt.Decrypt(string.Format("{0}/{1}", directory, FileName));
+                string fileContent = File.ReadAllText(Path.Combine(directory, fileName));
+                string[] encryptedInfo = fileContent.Split(char.Parse("†"));
+                byte[] encryptedMessage = Convert.FromBase64String(encryptedInfo[0]);
+                byte[] encryptedKey = Convert.FromBase64String(encryptedInfo[1]);
+                byte[] encryptedIV = Convert.FromBase64String(encryptedInfo[2]);
+                string AllAccounts = encrypt.decrypt(encryptedMessage, encryptedKey, encryptedIV);
 
                 //split the string by new line
-                string[] ListOfAccountsString = AllAccounts.Split("\n");
+                string[] ListOfAccountsString = AllAccounts.Split(char.Parse("\n"));
 
                 //add each account in the array into the temp dictionary
                 foreach (string account in ListOfAccountsString)
                 {
 
-                    string[] info = account.Split(" | ");
+                    string[] info = account.Split(char.Parse("|"));
                     if (info.Length == 3)
                     {
                         accountClass temp = new accountClass(info[0], info[1], info[2]);
@@ -297,7 +306,6 @@ namespace Password_Manger
         public Password_Manger()
         {
             LoadAccounts();
-            Console.WriteLine("The accounts have been loaded.");
         }
     }
 }

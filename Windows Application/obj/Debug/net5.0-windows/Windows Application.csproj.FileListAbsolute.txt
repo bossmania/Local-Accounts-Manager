@@ -21,9 +21,6 @@ C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\De
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\Windows Application.pdb
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\Windows Application.genruntimeconfig.cache
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\bin\Debug\net5.0-windows\Password Manger.deps.json
-C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\bin\Debug\net5.0-windows\Password Manger.runtimeconfig.json
-C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\bin\Debug\net5.0-windows\Password Manger.runtimeconfig.dev.json
-C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\bin\Debug\net5.0-windows\Password Manger.exe
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\bin\Debug\net5.0-windows\Password Manger.dll
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\bin\Debug\net5.0-windows\Password Randomizer.dll
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\bin\Debug\net5.0-windows\Password Manger.pdb
@@ -31,3 +28,11 @@ C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\bin\De
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\Windows Application.csproj.CopyComplete
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\Interop.VBScript_RegExp_10.dll
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\Windows Application.csproj.ResolveComReference.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\addAccount.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\modifyAccount.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\server.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\addAccount.baml
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\modifyAccount.baml
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\server.baml
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\client.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\obj\Debug\net5.0-windows\client.baml

@@ -1,5 +1,4 @@
 ﻿using System;
-using Password_Manger;
 
 namespace temp
 {
@@ -7,12 +6,15 @@ namespace temp
     {
         static void Main(string[] args)
         {
-            Password_Manger.Password_Manger temp = new Password_Manger.Password_Manger();
-            temp.CreateAccount("google", "wdawjdawd@gmail.com");
-            temp.CreateAccount("youtube", "grdg3wjk@gmail.com");
-            temp.CreateAccount("discord", "bossmnaia#0001");
+            Password_Manger.Password_Manger passwordManger = new Password_Manger.Password_Manger();
 
-            temp.SaveAccounts();
+            //passwordManger.CreateAccount("google", "google@gmail.com");
+            //passwordManger.CreateAccount("facebook", "facebook@gmail.com");
+            //passwordManger.CreateAccount("twitter", "twitter@gmail.com");
+            //passwordManger.CreateAccount("instagram", "instagram@gmail.com");
+
+            passwordManger.ReadAccounts();
+            
         }
     }
 }

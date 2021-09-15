@@ -1,77 +1,49 @@
-﻿using System.IO;
+﻿using System;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace Encryption
 {
     public class encryption
     {
-        public void Encrypt(string file, string message)
+        static Aes createCipher()
         {
-            using (FileStream fileStream = new(file, FileMode.OpenOrCreate))
-            {
-                using (Aes aes = Aes.Create())
-                {
-                    byte[] key =
-                    {
-                0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
-                0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
-            };
-                    aes.Key = key;
+            //create the aes cipher for encryption
+            Aes cipher = Aes.Create();
+            cipher.Padding = PaddingMode.ISO10126;
+            cipher.Mode = CipherMode.CBC;
 
-                    byte[] iv = aes.IV;
-                    fileStream.Write(iv, 0, iv.Length);
-
-                    using (CryptoStream cryptoStream = new(
-                        fileStream,
-                        aes.CreateEncryptor(),
-                        CryptoStreamMode.Write))
-                    {
-                        using (StreamWriter encryptWriter = new(cryptoStream))
-                        {
-                            encryptWriter.WriteLine(message);
-                        }
-                    }
-                }
-            }
+            return cipher;
         }
 
-        public string Decrypt(string file)
+        public Tuple<byte[], byte[], byte[]> encrypt(string message)
         {
-            using (FileStream fileStream = new(file, FileMode.Open))
-            {
-                using (Aes aes = Aes.Create())
-                {
-                    byte[] iv = new byte[aes.IV.Length];
-                    int numBytesToRead = aes.IV.Length;
-                    int numBytesRead = 0;
-                    while (numBytesToRead > 0)
-                    {
-                        int n = fileStream.Read(iv, numBytesRead, numBytesToRead);
-                        if (n == 0) break;
+            //create the cipher and the encrypter
+            Aes cipher = createCipher();
+            ICryptoTransform cryptTransform = cipher.CreateEncryptor();
 
-                        numBytesRead += n;
-                        numBytesToRead -= n;
-                    }
+            //encypt the message
+            byte[] plainText = Encoding.UTF8.GetBytes(message);
+            byte[] cipherText = cryptTransform.TransformFinalBlock(plainText, 0, plainText.Length);
 
-                    byte[] key =
-                    {
-                0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
-                0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
-            };
+            //return the message with other info
+            Tuple<byte[], byte[], byte[]> info = Tuple.Create<byte[], byte[], byte[]>(cipherText, cipher.Key, cipher.IV);
+            return info;
+        }
 
-                    using (CryptoStream cryptoStream = new(
-                       fileStream,
-                       aes.CreateDecryptor(key, iv),
-                       CryptoStreamMode.Read))
-                    {
-                        using (StreamReader decryptReader = new(cryptoStream))
-                        {
-                            return decryptReader.ReadToEnd();
-                        }
-                    }
-                }
-            }
+        public string decrypt(byte[] cipherText, byte[] key, byte[] IV)
+        {
+            //create a cipher and set the IV
+            Aes cipher = createCipher();
+            cipher.IV = IV;
+            cipher.Key = key;
 
+            //create the decryptor and decode the message
+            ICryptoTransform cryptTransform = cipher.CreateDecryptor();
+            byte[] plainText = cryptTransform.TransformFinalBlock(cipherText, 0, cipherText.Length);
+            string message = Encoding.UTF8.GetString(plainText);
+
+            return message;
         }
     }
 }

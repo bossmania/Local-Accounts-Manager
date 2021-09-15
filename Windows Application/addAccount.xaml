@@ -1,0 +1,50 @@
+﻿<Window x:Class="Windows_Application.addAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Windows_Application"
+        mc:Ignorable="d"
+        Title="New account" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight"> 
+    <!--add the grid of the window-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <!--get all of the important info from the user-->
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,1.25,2,0" HorizontalAlignment="Left" VerticalAlignment="Center">What 
+            service is this account for?</TextBlock>
+        <TextBox x:Name="AccountTextbox" Grid.Row="1" Grid.Column="2" Width="240" Margin="5,3,0,0" VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="1" Margin="0,0,2,0" VerticalAlignment="Center">What is the username/email of this 
+            account?</TextBlock>
+        <TextBox x:Name="UsernameTextbox" Grid.Row="2" Grid.Column="2" Width="240" Margin="5,3,0,0" VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="1" Margin="0,0,2,0" VerticalAlignment="Center">Do you want to have the password be 
+            randomly generated?</TextBlock>
+        <CheckBox x:Name="RandomPasswordCheckbox" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch" Margin="5,3,0,0"
+            Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" VerticalAlignment="Center" IsChecked="False"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="1" Margin="0,0,2,0" VerticalAlignment="Center">If no, then type it here.</TextBlock>
+        <PasswordBox x:Name="PasswordTextbox" Grid.Row="4" Grid.Column="2" Width="240" Margin="5,3,0,0" IsEnabled="False"/>
+
+        <!--add the button that will add the account or cancel the process-->
+        <WrapPanel Grid.Row="5" Grid.Column="2" Margin="5,8,0,0">
+            <Button x:Name="Submit" IsDefault="True" Content="Add Account" Click="submit_Click"/>
+            <Button x:Name="Cancel" IsCancel="True" Content="Cancel" Margin="130,0,0,0"/>
+        </WrapPanel>
+    </Grid>
+</Window>

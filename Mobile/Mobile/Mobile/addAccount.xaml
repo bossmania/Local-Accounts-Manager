@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.addAccount"
+             Title="Add Account">
+    <ContentPage.Content>
+        <Grid>
+            <!--Define the rows and columns-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+
+            <!--Ask the user for some info of the account-->
+            <Label Grid.Row="1" Grid.Column="1" Margin="0, 1.25, 2, 0" HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center">What service is this account for?</Label>
+            <Entry x:Name="accountText" Grid.Row="1" Grid.Column="2" Margin="20,3,0,0" HorizontalTextAlignment="Center" 
+                   WidthRequest="200"></Entry>
+
+            <Label Grid.Row="2" Grid.Column="1" Margin="0, 1.25, 2, 0" HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center">What is the username/email of this account?</Label>
+            <Entry x:Name="usernameText" Grid.Row="2" Grid.Column="2" Margin="20,3,0,0" HorizontalTextAlignment="Center" 
+                   WidthRequest="200"></Entry>
+
+            <Label Grid.Row="3" Grid.Column="1" Margin="0, 1.25, 2, 0" HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center">Do you want the password to be randomly generated?</Label>
+            <CheckBox x:Name="passwordCheckbox" CheckedChanged="passwordCheckbox_CheckedChanged" 
+                      Grid.Row="3" Grid.Column="2" Margin="260,0,0,0" Scale="1.5" IsChecked="True"/>
+
+            <Label Grid.Row="4" Grid.Column="1" Margin="0, 0, 2, 0" HorizontalTextAlignment="Start"
+                   VerticalTextAlignment="Center">If no, then type it here.</Label>
+            <Entry x:Name="passwordText" Grid.Row="4" Grid.Column="2" Margin="20,0,0,0" 
+                   HorizontalTextAlignment="Center" WidthRequest="200" IsEnabled="False" IsPassword="True"></Entry>
+
+            <!--Give the user the option to add the account or cancel the process-->
+            <RelativeLayout Grid.Column="2" Grid.Row="5" HorizontalOptions="End">
+                <Button x:Name="Submit" Text="Add Account" Clicked="Submit_Clicked"/>
+                <Button x:Name="Cancel" Text="Cancel" Margin="130,0,0,0" Clicked="Cancel_Clicked" />
+            </RelativeLayout>   
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,13 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Update="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="addAccount.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="client.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="modifyAccount.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="server.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="addAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="client.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="modifyAccount.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="server.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

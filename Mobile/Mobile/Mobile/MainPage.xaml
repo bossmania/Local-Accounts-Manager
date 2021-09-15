@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile.MainPage"
+             xmlns:local="clr-namespace:Mobile"
+             Title="Local Password Logger"
+             Background="DarkGray" >
+ 
+    <StackLayout>
+        
+        <!--Create the frame for the header of the table-->
+        <Frame BackgroundColor="LightGray" BorderColor="DarkSlateGray" HeightRequest="60" Padding="0" Margin="3,14, 3, 0">
+            <!--Create the grid layout for the header of the table-->
+            <Grid Padding="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2.5*"/>
+                    <ColumnDefinition Width="2.5*"/>
+                    <ColumnDefinition Width="2.5*"/>
+                    <ColumnDefinition Width="2.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+
+                <!--Add in the header text and buttons-->
+                <Label Margin="10,0,10,0" Text="Account" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0"/>
+                <Label Margin="10,0,10,0" Text="Username" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1"/>
+                <Label Margin="10,0,10,0" Text="Password" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Grid.Column="3" Margin="0, 3">
+                    <ImageButton x:Name="NewAccount" Margin="2, 1" Source="{local:ImageResource Mobile.image.newAccountImage.png}" 
+                                 BorderColor="Gray" BorderWidth="1" BackgroundColor="White" Clicked="NewAccount_Clicked"/>
+                    <ImageButton x:Name="SendAccount" Margin="2, 1" Source="{local:ImageResource Mobile.image.sendAccountImage.png}" 
+                                 BorderColor="Gray" BorderWidth="1" BackgroundColor="White" Clicked="SendAccount_Clicked"/>
+                    <ImageButton x:Name="ReciveAccount" Margin="2, 1" Source="{local:ImageResource Mobile.image.recciveAccountImage.png}" 
+                                 BorderColor="Gray" BorderWidth="1" BackgroundColor="White" Clicked="ReciveAccount_Clicked"/>
+                </StackLayout>
+
+                <!--Add in the border for the text and buttons-->
+                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="3" HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand"/>
+            </Grid>
+        </Frame>
+        
+        <!--create the listview for the table of accounts-->
+        <ListView x:Name="passwordTable" SeparatorVisibility="None" SelectionMode="None" HasUnevenRows="False" Margin="3,-6.25, 3, 50" RowHeight="100">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <!--set up the rows and columns for the accounts-->
+                        <Frame Padding="0" BorderColor="DarkSlateGray">
+                            <Grid Padding="0" RowSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2.5*"/>
+                                    <ColumnDefinition Width="2.5*"/>
+                                    <ColumnDefinition Width="2.5*"/>
+                                    <ColumnDefinition Width="2.5*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!--Bind the accounts's info to the row and columns and add the buttons-->
+                                <Label Text="{Binding account}" VerticalOptions="Center" HorizontalOptions="Center" 
+                                       Grid.Column="0"/>
+                                <Label Text="{Binding username}" VerticalOptions="Center" HorizontalOptions="Center"
+                                       Grid.Column="1"/>
+                                <Label Text="{Binding censorPassword}" VerticalOptions="Center" HorizontalOptions="Center"
+                                       Grid.Column="2" />
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Grid.Column="3" Margin="0, 3" 
+                                             HeightRequest="45" VerticalOptions="Center">
+                                    <ImageButton x:Name="CopyPassword" Margin="2, 1" Source="{local:ImageResource Mobile.image.copyPasswordImage.png}" 
+                                 BorderColor="Gray" BorderWidth="1" BackgroundColor="White" Clicked="CopyPassword_Clicked" CommandParameter="{Binding .}"/>
+                                    <ImageButton x:Name="ModifyAccount" Margin="2, 1" Source="{local:ImageResource Mobile.image.modifyAccountImage.png}" 
+                                 BorderColor="Gray" BorderWidth="1" BackgroundColor="White" Clicked="ModifyAccount_Clicked" CommandParameter="{Binding .}"/>
+                                    <ImageButton x:Name="DeleteAccount" Margin="2, 1" Source="{local:ImageResource Mobile.image.deleteAccountImage.png}" 
+                                 BorderColor="Gray" BorderWidth="1" BackgroundColor="White" Clicked="DeleteAccount_Clicked" CommandParameter="{Binding .}"/>
+                                </StackLayout>
+
+                                <!--add the borders for the cells-->
+                                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="0" HorizontalOptions="EndAndExpand" 
+                                         VerticalOptions="FillAndExpand" />
+                                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="1" HorizontalOptions="EndAndExpand" 
+                                         VerticalOptions="FillAndExpand"/>
+                                <BoxView BackgroundColor="DarkSlateGray" WidthRequest="1" Grid.Column="2" HorizontalOptions="EndAndExpand" 
+                                         VerticalOptions="FillAndExpand"/>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    
+    </StackLayout>
+
+</ContentPage>

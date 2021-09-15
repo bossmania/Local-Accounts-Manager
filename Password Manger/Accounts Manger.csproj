@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--<TargetFramework>net5.0</TargetFramework>-->
+	<TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Password_Manger</RootNamespace>
+    <ApplicationIcon />
+	<OutputType>Exe</OutputType>
+    <StartupObject />
+    <Win32Resource />
+  </PropertyGroup>
+
+</Project>

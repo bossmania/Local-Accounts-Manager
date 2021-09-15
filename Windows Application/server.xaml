@@ -1,0 +1,40 @@
+﻿<Window x:Class="Windows_Application.server"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Windows_Application"
+        mc:Ignorable="d"
+        Title="Receive Accounts" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight">
+    
+    <!--add the grid of the window-->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <!--tell the user important info-->
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="0,2,0,0">This device is currently waiting for 
+            the accounts to be sent here.</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" Margin="0,2,0,0">To send it, go to the other device, 
+            click on send account, and put the following IP in.</TextBlock>
+        <TextBlock x:Name="IpTextblock" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Margin="0,3,0,0">The IP is 
+            127.0.0.1</TextBlock>
+
+        <!--give the user info on the process of the transfer-->
+        <TextBlock x:Name="status" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center">Status: 
+            Waiting for a connection.</TextBlock>
+    </Grid>
+</Window>

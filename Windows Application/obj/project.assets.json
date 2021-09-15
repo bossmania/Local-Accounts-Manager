@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "Password Manger/1.0.0": {
+      "Accounts Manger/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETStandard,Version=v2.0",
         "compile": {
-          "bin/placeholder/Password Manger.dll": {}
+          "bin/placeholder/Accounts Manger.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Password Manger.dll": {}
+          "bin/placeholder/Accounts Manger.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Password Manger/1.0.0": {
+    "Accounts Manger/1.0.0": {
       "type": "project",
-      "path": "../Password Manger/Password Manger.csproj",
-      "msbuildProject": "../Password Manger/Password Manger.csproj"
+      "path": "../Password Manger/Accounts Manger.csproj",
+      "msbuildProject": "../Password Manger/Accounts Manger.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Password Manger >= 1.0.0"
+      "Accounts Manger >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger\\Windows Application\\Windows Application.csproj",
+      "projectUniqueName": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger - Copy\\Windows Application\\Windows Application.csproj",
       "projectName": "Windows Application",
-      "projectPath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger\\Windows Application\\Windows Application.csproj",
+      "projectPath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger - Copy\\Windows Application\\Windows Application.csproj",
       "packagesPath": "C:\\Users\\bossm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger\\Windows Application\\obj\\",
+      "outputPath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger - Copy\\Windows Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -58,8 +58,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger\\Password Manger\\Password Manger.csproj": {
-              "projectPath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger\\Password Manger\\Password Manger.csproj"
+            "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger - Copy\\Password Manger\\Accounts Manger.csproj": {
+              "projectPath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger - Copy\\Password Manger\\Accounts Manger.csproj"
             }
           }
         }
@@ -91,7 +91,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

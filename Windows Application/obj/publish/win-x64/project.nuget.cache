@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fmc415mMEi3Muh5asOd2oRoGIKBXMc3NLcrVNb2Ub04V2KEpLrIhxLNtdIEky8RvQB6rnQHT6Jt95UcHirGzQA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger - Copy\\Windows Application\\Windows Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bossm\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\5.0.9\\microsoft.netcore.app.runtime.win-x64.5.0.9.nupkg.sha512",
+    "C:\\Users\\bossm\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\5.0.9\\microsoft.windowsdesktop.app.runtime.win-x64.5.0.9.nupkg.sha512",
+    "C:\\Users\\bossm\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\5.0.9\\microsoft.aspnetcore.app.runtime.win-x64.5.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\Windows Application.csproj.AssemblyReference.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\Interop.VBScript_RegExp_10.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\Windows Application.csproj.ResolveComReference.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\addAccount.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\client.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\MainWindow.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\modifyAccount.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\server.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\App.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\Windows Application_MarkupCompile.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Windows Application\obj\Release\net5.0-windows\win-x86\Windows Application_MarkupCompile.lref

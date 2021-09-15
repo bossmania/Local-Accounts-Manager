@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "/SAGcRg5p90E7ami3wiLmoVM2W1IwAQI/hIoWwqfJjdmOOsh8pHOvxLlm8B6XwGnpNBDy3xmMtHFTpMRC/jHTw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger - Copy\\Mobile\\Mobile\\Mobile\\Mobile.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bossm\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\bossm\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\bossm\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\bossm\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\bossm\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512"
+  ],
+  "logs": []
+}

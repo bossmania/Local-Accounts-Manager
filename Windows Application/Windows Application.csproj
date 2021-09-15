@@ -5,7 +5,18 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>Windows_Application</RootNamespace>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon></ApplicationIcon>
+    <AssemblyName>Windows Application</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Imgs\copyPasswordImage.png" />
+    <None Remove="Imgs\deleteAccountImage.png" />
+    <None Remove="Imgs\modifyAccountImage.png" />
+    <None Remove="Imgs\newAccountImage.png" />
+    <None Remove="Imgs\recciveAccountImage.png" />
+    <None Remove="Imgs\sendAccountImage.png" />
+  </ItemGroup>
 
   <ItemGroup>
     <COMReference Include="VBScript_RegExp_10">
@@ -20,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Password Manger\Password Manger.csproj" />
+    <ProjectReference Include="..\Password Manger\Accounts Manger.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,7 +41,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Imgs\" />
+    <Resource Include="Imgs\copyPasswordImage.png" />
+    <Resource Include="Imgs\deleteAccountImage.png" />
+    <Resource Include="Imgs\modifyAccountImage.png" />
+    <Resource Include="Imgs\newAccountImage.png" />
+    <Resource Include="Imgs\recciveAccountImage.png" />
+    <Resource Include="Imgs\sendAccountImage.png" />
   </ItemGroup>
 
 </Project>

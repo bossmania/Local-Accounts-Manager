@@ -1,0 +1,52 @@
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csproj.AssemblyReference.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.AssemblyInfoInputs.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.AssemblyInfo.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csproj.CoreCompileInputs.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csproj.CopyComplete
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\addAccount.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\modifyAccount.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\receiveAccounts.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\sendAccounts.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Local Accounts Manager.deps.json
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Local Accounts Manager.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\ref\Local Accounts Manager.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Local Accounts Manager.pdb
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Local Accounts Manager.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\ref\Local Accounts Manager.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Local Accounts Manager.pdb
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Accounts Manger.deps.json
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Accounts Manger.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Accounts Manger.pdb
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Accounts Manger.deps.json
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Local Accounts Manager.deps.json
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Local Accounts Manager.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\ref\Local Accounts Manager.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Local Accounts Manager.pdb
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Accounts Manger.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Accounts Manger.pdb
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csproj.AssemblyReference.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\addAccount.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\modifyAccount.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\receiveAccounts.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\sendAccounts.xaml.g.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.AssemblyInfoInputs.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.AssemblyInfo.cs
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csproj.CoreCompileInputs.cache
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csproj.CopyComplete
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Local Accounts Manager.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\ref\Local Accounts Manager.dll
+C:\Users\bossm\Documents\GitHub\Local Password Logger - Copy\Mobile\Mobile\Mobile\obj\Debug\netstandard2.0\Local Accounts Manager.pdb

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qatxIVKpsADy+nzYapeIUkjEbNaZ+CfzcSFH4aDUt1kR5LRrAY9BP5qD5FyopC+qk1COHFFYlNbmfbPy2/f1bQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bossm\\Documents\\GitHub\\Local Password Logger - Copy\\Mobile\\Mobile\\Mobile.iOS\\Mobile.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bossm\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\bossm\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\bossm\\.nuget\\packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512"
+  ],
+  "logs": []
+}

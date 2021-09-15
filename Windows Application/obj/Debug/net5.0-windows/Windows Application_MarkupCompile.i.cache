@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\bossm\Documents\GitHub\Local Password Logger\Windows Application\App.xaml
-11407045341
+5555567426
 
-5-970948858
-1961851372395
-MainWindow.xaml;
+9-949952348
+196-2014164967
+addAccount.xaml;client.xaml;MainWindow.xaml;modifyAccount.xaml;server.xaml;
 
-True
+False
 
